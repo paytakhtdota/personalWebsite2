@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@700&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@400;700&family=Poppins&display=swap');
 
 body {
     min-height: 2000px;
@@ -10,6 +10,15 @@ html {
 
 a {
     text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Playfair Display", serif;
 }
 
 
@@ -239,7 +248,7 @@ a {
 }
 
 #mini-menu {
-    display:none;
+    display: none;
     justify-content: center;
     align-items: center;
     position: absolute;
@@ -250,7 +259,7 @@ a {
     background-color: #000000bf;
     backdrop-filter: blur(3px);
     z-index: 9999;
-    font-family: 'Open Sans', sans-serif; ;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #mini-menu>ul {
@@ -258,12 +267,12 @@ a {
     text-align: center;
 }
 
-#mini-menu>ul>li{
+#mini-menu>ul>li {
     padding: 8px;
     margin: 5px;
 }
 
-#mini-menu>ul>li:last-child{
+#mini-menu>ul>li:last-child {
     padding: 13px;
     margin: 7px;
 }
@@ -294,49 +303,74 @@ a {
 
 /** section-2 **/
 
-#section-3{
+#section-3 {
     margin: 5px auto;
     width: 1280px;
     display: grid;
     gap: 10px;
-    grid-template-areas: 
-    'item1 item1 item1 item2 item2 item2 item2'
-    'item1 item1 item1 item3 item3 item4 item4'
-    'item1 item1 item1 item5 item5 item6 item6';
-
-    background-color: #2196F3;
-  padding: 10px;
+    grid-template-areas:
+        'item1 item1 item1 item2 item2 item2 item2'
+        'item1 item1 item1 item3 item3 item4 item4'
+        'item1 item1 item1 item3 item3 item4 item4'
+        'item1 item1 item1 item5 item5 item6 item6'
+        'item1 item1 item1 item5 item5 item6 item6';
+    justify-content: center;
+    background-color: #2196F300;
+    padding: 5px;
 }
 
-#section-3 > div {
+#section-3>div {
     background-color: rgba(255, 255, 255, 0.8);
-    text-align: center;
-    padding: 20px 0;
+    text-align: left;
+    padding: 0;
     font-size: 30px;
-  }
- .item1 {
+}
+
+.item1 {
     grid-area: item1;
- }
 
- .item2 {
+}
+
+.item2 {
     grid-area: item2;
- }
+}
 
- .item3 {
+.item3 {
     grid-area: item3;
- }
+}
 
- .item4 {
+.item4 {
     grid-area: item4;
- }
+}
 
- .item5 {
+.item5 {
     grid-area: item5;
- }
+}
 
- .item6 {
+.item6 {
     grid-area: item6;
- }
+}
+
+.item1>img {
+    width: 480px;
+    height: 358px;
+}
+
+.item2>h3 {
+    margin: 40px 0 0 10px;
+    font-weight: 400;
+    font-size: 1.1em;
+    color: #2c4964;
+}
+
+.item2>h5 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 0.6em;
+    color: #2c4964;
+    margin: 10px 10px 0 11px;
+    text-align: justify;
+}
 
 @media screen and (max-width: 1921px) {
     #section-2 {
@@ -372,7 +406,7 @@ a {
         align-items: center;
     }
 
-    #section-1{
+    #section-1 {
         height: fit-content;
     }
 
@@ -380,6 +414,7 @@ a {
         width: 350px;
 
     }
+
     #section-1>div>div:last-child {
         display: none;
 
@@ -388,6 +423,7 @@ a {
     #section-2 {
         width: 350px;
     }
+
     #section-1>div>div>h1 {
         font-size: 2.2em;
     }
