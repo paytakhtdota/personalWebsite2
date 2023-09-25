@@ -307,7 +307,7 @@ h6 {
     margin: 5px auto;
     width: 1280px;
     display: grid;
-    gap: 10px;
+    gap: 5px;
     grid-template-areas:
         'item1 item1 item1 item2 item2 item2 item2'
         'item1 item1 item1 item3 item3 item4 item4'
@@ -337,18 +337,26 @@ h6 {
 
 .item3 {
     grid-area: item3;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .item4 {
     grid-area: item4;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .item5 {
     grid-area: item5;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .item6 {
     grid-area: item6;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .item1>img {
@@ -368,8 +376,29 @@ h6 {
     font-weight: 400;
     font-size: 0.6em;
     color: #2c4964;
-    margin: 10px 10px 0 11px;
+    margin: 15px 10px 0 11px;
     text-align: justify;
+    line-height: 1.2; 
+}
+
+.section3-icon{
+    width: 35px;
+    height: 80px;
+    margin: 5px 0 0 5px;
+}
+
+.section3-noteContainer{
+    width: 316px;
+    height: 80px;
+    margin: 1px 0 0 5px;
+}
+
+.section3-note{
+    margin: 2px 0 0 2px;
+    width: 310px;
+    height: 36px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.55em;
 }
 
 @media screen and (max-width: 1921px) {
