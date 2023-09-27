@@ -1,6 +1,6 @@
-const desiredHeightPercentage = 96;
 const viewportHeight = window.innerHeight;
-const desiredHeightInPixels = (desiredHeightPercentage / 100) * viewportHeight;
+const heightOfsection1 = (viewportHeight-70);
+document.getElementById("section-1").style.height = heightOfsection1+"px";
 
 function mousehover() {
     document.getElementById("logo-img").src = "./img/logo2.jpg";
@@ -20,7 +20,7 @@ function openMenu() {
 
 function fixedNavBar(){
     const fixnav = document.getElementById("fixed-navbar");
-    if(window.scrollY >= desiredHeightInPixels){
+    if(window.scrollY >= heightOfsection1){
         fixnav.style.display = "block";
     }
     else{
@@ -30,3 +30,7 @@ function fixedNavBar(){
 }
 
 window.addEventListener('scroll', fixedNavBar);
+
+var elements = document.getElementById("navbar");
+console.log(elements);
+
