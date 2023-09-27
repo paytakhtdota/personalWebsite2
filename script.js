@@ -20,7 +20,7 @@ function openMenu() {
 
 function fixedNavBar(){
     const fixnav = document.getElementById("fixed-navbar");
-    if(window.scrollY >= heightOfsection1){
+    if(window.scrollY >= heightOfsection1+10){
         fixnav.style.display = "block";
     }
     else{
@@ -31,6 +31,4 @@ function fixedNavBar(){
 
 window.addEventListener('scroll', fixedNavBar);
 
-var elements = document.getElementById("navbar");
-console.log(elements);
 
