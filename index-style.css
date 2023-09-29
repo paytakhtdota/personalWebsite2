@@ -571,6 +571,20 @@ h6 {
     font-weight: 400;
 }
 
+#sumary-container{
+    border-left: 3px solid #50cfd8a0;
+    padding: 0 10px 10px 20px;
+}
+
+#education-container{
+    border-left: 3px solid #50cfd8a0;
+    padding: 0 10px 10px 20px;
+}
+
+#experience-container{
+    border-left: 3px solid #50cfd8a0;
+    padding: 0 10px 10px 20px;
+}
 
 #section5-container>div>h2 {
     font-size: 2.2em;
@@ -638,7 +652,7 @@ h6 {
 
 
 .resume-ul{
-    padding: 10px 0 0 0;
+    padding:0;
     list-style-type:disc;
     list-style-position: inside;
     text-indent:-10px;
@@ -647,10 +661,20 @@ h6 {
 #detail-container * li>strong{
     font-weight: 900;
     margin-left: -10px;
+    opacity: 0.85;
 }
 
 .resume-ul>li i{
    margin-left: -10px;
+}
+
+#education-detail>p:nth-child(4){
+    margin-top: 8px;
+    margin-bottom: 15px;
+}
+
+#education-detail>:last-child{
+    margin-top: 8px;
 }
 
 /** media queries  ////////////////////////////////////////**/
