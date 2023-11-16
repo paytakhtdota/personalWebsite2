@@ -734,21 +734,21 @@ h6 {
         'item4 item4 item5'
         'item4 item4 item5';
     gap: 10px;
-    border: 1px solid #e4e4e480;
     padding: 15px;
     box-sizing: border-box;
     font-weight: 400;
-    width: 1250px;
+    width: 1100px;
+    margin-top: 30px;
 }
 
 .section6-container :first-child {
     grid-area: item1;
-   
+
 }
 
 .section6-container :nth-child(2) {
     grid-area: item2;
-   
+
 }
 
 .section6-container :nth-child(3) {
@@ -761,13 +761,11 @@ h6 {
 
 .section6-container :nth-child(5) {
     grid-area: item5;
-    
+
 }
 
 
 .contactCards {
-   
-    border: 1px solid #e4e4e480;
     padding: 15px;
     box-sizing: border-box;
     font-weight: 400;
@@ -786,17 +784,64 @@ h6 {
 }
 
 .form {
-   
+    padding: 25px 25px 20px 30px;
     height: 50px;
-    border: solid 1px black;
+    height: auto;
 
 }
 
-.massage {
-    
-    height: 50px;
-    border: solid 1px black;
+.massage>h2 , .form>h2 {
+    border-bottom: 4px solid #4bc7cfc0;
+    width: 180px;
+    font-size: 28px;
+    font-weight: 800px;
+    padding-bottom: 10px;
+   
+}
 
+.form>textarea {
+    height: 60px;
+    
+}
+
+
+
+.messageInput {
+    display: block;
+    margin-top: 15px;
+    width: 75%;
+    height: 40px;
+    font-size: 16px;
+}
+
+.form>button {
+    margin-top: 15px;
+    height: 40px;
+    width: 200px;
+    border: 1px solid white;
+    color: white;
+    font-size: 18px;
+    background-color: #4bc7cfc0;
+    border-radius: 5px;
+    
+}
+.form>button:hover {
+    background-color: #32a4acc0;
+    cursor: pointer;
+}
+
+.massage {
+
+    height: auto;
+    width: 300px;
+    padding: 20px 2% 2% 2%;
+}
+
+.massage > p {
+    padding: 5px;
+    line-height: 1.2;
+    font-size: 18px;
+    text-align: justify;
 }
 
 
